@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 008 - Listas</title>
+</head>
+<body>
+    <h1>Listas e Tipos de Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <p>Para criar uma lista ordenada (que tem ordem numérica) existe a tag OL. <br>Dentro de cada lista existem os seus itens, que para isso se utiliza LI</p>
+    <ol>
+        <li>Primeiro Item</li>
+        <li>Segundo Item</li>
+        <li>Terceiro Item</li>
+        <li>Quarto Item</li>
+        <li>Quinto Item</li>
+    </ol>
+    <p>Por padrão, a ordem numérica é identificada por numeração àrabe (1,2,3,4...), mas para mudar para outro tipo de ordem, utilizamos o parâmetro <code>type="I"</code> (Numeração Romana), <code>type="A"</code> (Ordem com letras maiusculas), <code>type="a"</code> (Ordem com letras minusculas).</p>
+
+    <h2>Listas Não Ordenadas</h2>
+    <p>Para criar uma lista não ordenada (que não tem ordem numérica) existe a tag UL. <br>Dentro de cada lista existem os seus itens, que para isso se utiliza LI</p>
+    <ul>
+        <li>Primeiro Item</li>
+        <li>Segundo Item</li>
+        <li>Terceiro Item</li>
+        <li>Quarto Item</li>
+        <li>Quinto Item</li>
+    </ul>
+    <p>Por padrão, a ordem é identificada por um circulo preto , mas para mudar para outro tipo de ordem, utilizamos o parâmetro <code>type="disc"</code> (Circulo preto padrão), <code>type="circle"</code> (Circulo Branco), <code>type="square"</code> (Quadrado Preto).</p>
+
+    <h2>Listas de Definição</h2>
+    <p>Para criar uma lista de definição (que define algo), usa-se a tag DL. <br>Dentro de cada item da lista existe o Termo (DT) e a Descrição (DD)</p>
+    <dl>
+        <dt>Termo</dt>
+        <dd>Descrição</dd>
+    </dl>
+    <p>Por exemplo:</p>
+    <dl>
+        <dt>CM</dt>
+        <dd>Correio da Manhã</dd>
+        <dt>JN</dt>
+        <dd>Jornal de Noticias</dd>
+        <dt>DN</dt>
+        <dd>Diario de Noticias</dd>
+    </dl>
+
+    <h2>Misturar Listas Ordenadas e Não Ordenadas</h2>
+    <p>Também podemos misturar os 3 tipos de listas. Basta colocar as tags OL, UL, ou DL, dentro da Lista. Por exemplo:</p>
+    <pre>
+        <code>
+            &lt;ol&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;Primeiro Item&lt;/li&gt;
+                    &lt;li&gt;Segundo Item&lt;/li&gt;
+                    &lt;li&gt;Terceiro Item&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/ol&gt;
+        </code>
+    </pre>
+
+    <ol>
+        <li>Listas Ordenadas:</li>
+        <ol>
+            <li>Primeiro item da lista ordenada</li>
+            <li>Segundo item da lista ordenada</li>
+        </ol>
+        <li>Listas Não-Ordenadas</li>
+        <ul>
+            <li>Primeiro item da lista não ordenada</li>
+            <li>Segundo item da lista não ordenada</li>
+        </ul>
+        <li>Listas de Definição</li>
+        <dl>
+            <dt>Primeiro termo</dt>
+            <dd>Primeira descrição</dd>
+            <dt>Segundo termo</dt>
+            <dd>Segunda descrição</dd>
+        </dl>
+    </ol>
+</body>
+</html>

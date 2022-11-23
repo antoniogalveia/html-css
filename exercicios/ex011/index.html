@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 011 - Media</title>
+</head>
+<body>
+    <h1>Imagens Flexiveis</h1>
+    <hr>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imgs/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imgs/foto-m.png" type="image/png">
+        <img src="imgs/foto-g.png" alt="Imagem Flexivel">
+    </picture>
+
+    <h1>Audio</h1>
+    <hr>
+    <audio preload="metadata" controls>
+        <source src="media/audio/all-i-am-dyalla.mp3" type="audio/mpeg">
+        <!--<source src="media/audio/all-i-am-dyalla.ogg" type="audio/ogg">-->
+        <!--<source src="media/audio/all-i-am-dyalla.wav" type="audio/wav">-->
+        <p>Infelizmente, o seu navegador não consegue carregar e reproduzir o audio atribuido a esta página :(</p>
+    </audio>
+</body>
+</html>

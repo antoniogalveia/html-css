@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        *{
+            margin: 0;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+
+
+        /* CABEÇALHO */
+
+        header{
+            background-color: rgb(51, 51, 51);
+            padding: 10px;
+            display: flex;
+        }
+
+        header > h1{
+            color: white;
+            font-weight: bold;
+        }
+
+        nav{
+            margin: auto auto;
+        }
+
+        nav > a{
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            padding: 5px;
+        }
+
+        nav > a:hover{
+            border: 2px solid white;
+            border-radius: 3px;
+        }
+
+
+        /* MAIN */
+
+        main{
+            width: 900px;
+            margin: auto;
+            background-color: white;
+        }
+
+        main > .guerra{
+            border-bottom: 1px solid rgb(59, 59, 59);
+            padding: 10px;
+            height: 150px;
+        }
+
+       .noticia{
+            width: 420px;
+            display: inline-block;
+            padding: 10px;
+            border-bottom: 1px solid rgb(59, 59, 59);
+       }
+
+       .borda{
+        border-right: 1px solid rgb(59, 59, 59);
+       }
+
+        main > .futebol{
+            border-bottom: 1px solid rgb(59, 59, 59);
+            padding: 10px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Site</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Projetos</a>
+            <a href="#">Sobre Mim</a>
+            <a href="#">Contactos</a>
+        </nav>
+    </header>
+    <main>
+        <section class="guerra">
+            <article>
+                <h2>Titulo</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed quibusdam aperiam sapiente, temporibus delectus vitae voluptatibus consequuntur harum quisquam, enim pariatur. Possimus corporis excepturi architecto neque maiores laborum deleniti omnis.</p>
+            </article>
+        </section>
+        <section class="cronicas">
+            <article class="noticia borda">
+                <h2>Titulo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vitae similique pariatur maiores.</p>
+                <aside><quote>Diário de Noticias</quote></aside>
+            </article>
+            <article class="noticia">
+                <h2>Titulo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vitae similique pariatur maiores.</p>
+                <aside><quote>Jornal Expresso</quote></aside>
+            </article>
+        </section>
+        <section class="futebol">
+            <article>
+                <h2>Titulo</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed quibusdam aperiam sapiente, temporibus delectus vitae voluptatibus consequuntur harum quisquam, enim pariatur. Possimus corporis excepturi architecto neque maiores laborum deleniti omnis.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Escrito por Junot &copy; 2022 - Todos os Direitos Reservados</p>
+    </footer>
+</body>
+</html>

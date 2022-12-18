@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+        nav{
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        iframe{
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            width: 500px;
+            height: 220px;
+            border: 2px solid black;
+            box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.274);
+        }
+        nav a{
+            color: black;
+            padding: 10px;
+        }
+        nav a:hover{
+            padding: 10px;
+            background-color: blanchedalmond;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="pags/401.html" target="frame">Erro 401</a>
+        <a href="pags/403.html" target="frame">Erro 403</a>
+        <a href="pags/404.html" target="frame">Erro 404</a>
+    </nav>
+    <iframe src="pags/iframe.html" name="frame" scrolling="no">
+        <p>[Infelizmente, o seu navegador web não é compatível coma exibição deste iframe.]</p>
+    </iframe>
+</body>
+</html>

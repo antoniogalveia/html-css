@@ -77,8 +77,7 @@ main > h1{
 }
 
 article{
-    background-position: center;
-    background-size: cover;
+    background-color: rgb(240, 240, 240);
     border-radius: 30px;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.219);
     padding: 20px;
@@ -86,7 +85,6 @@ article{
 }
 
 article div{
-    background:rgba(0,0,0,0.8);
     border-radius: 20px;
     padding: 20px;
 }
@@ -94,38 +92,64 @@ article div{
 div > h2{
     margin: 0;
     font-weight: normal;
-    color: white;
+    color: black;
 }
 
 div > span{
     font-style: italic;
-    color: white;
+    color: black;
 }
 
 div > p{
     color: var(--paragraph-color);
 }
 
-div > p > a{
-    color: rgb(172, 172, 172);
+div > a{
+    color: black;
     text-decoration: none;
+    font-weight: bolder;
+    display: block;
 }
 
-div > p > a:hover{
+div > a:hover{
     text-decoration: underline;
 }
 
-#apart01{
-    background-image: url("../src/imgs/apartamento01.jpg");
+article > div{
+    display: inline-block;
 }
 
-#apart02{
-    background-image: url("../src/imgs/apartamento02.jpg");
+article > #imgdv{
+    width: 200px;
 }
 
-#apart03{
-    background-image: url("../src/imgs/apartamento03.jpg");
+img{
+    display: block;
+    margin: auto;
+    border-radius: 2px;
+    width: 200px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 main > a{
     color: black;

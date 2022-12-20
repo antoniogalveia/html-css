@@ -14,106 +14,91 @@
         }
 
         body{
-            background-color: rgb(65, 77, 73);
+            background-color: rgba(245, 245, 245, 0.685);
+            padding: 20px;
         }
 
         h1{
-            color: white;
+            color: rgb(0, 162, 255);
             text-align: center;
             margin-top: 10px;
+            margin-bottom: 10px;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.267);
         }
 
         section{
             background-color: white;
             padding: 50px;
-            width: 300px;
+            min-width: 300px;
+            max-width: 800px;
             border-radius: 40px;
             box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.219);
-            margin: 40px auto;
-        }
-
-        p{
-            margin-top: 10px;
-        }
-
-        #submit{
-            width: 50%;
-            background-color: rgb(0, 109, 160);
-            color: white;
-            height: 40px;
-            border: none;
-            border-radius: 30px;
-            box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.274);
-            margin: 10px auto;
-        }
-
-        #reset{
-            border: none;
-            text-decoration: underline;
+            margin: auto;
+            border: 2px solid rgb(0, 162, 255);
         }
 
         fieldset{
             padding: 10px;
-            border: 1px solid blue;
-            border-radius: 20px;
+            border: 1px solid rgb(0, 162, 255);
+            border-radius: 10px;
         }
 
         fieldset > legend{
-            color: blue;
+            color: rgb(0, 162, 255);
+            font-weight: bold;
+        }
+
+        #dados-pessoais #nome, #idade{
+            border: none;
+            border-bottom: 1px solid black;
+            width: 400px;
         }
     </style>
 </head>
 <body>
-    <h1>Formulários</h1>
+    <h1>Formulário de Inscrição</h1>
 
     <section>
-        <form action="cadastro.php" autocomplete="off" method="post">
-            <fieldset>
-                <legend>Dados do Aluno</legend>
-                <p>
-                    <label for="user">Nome</label>
-                    <input type="text" name="user" id="user" minlength="5" maxlength="20" placeholder="Nome Completo" required>
-                </p>
-                <p>
-                    <label for="email">Endereço Eletronico</label>
-                    <input type="email" name="email" id="email" placeholder="E-mail" required>
-                </p>
-                <p>
-                    <label for="password">Palavra Passe</label>
-                    <input type="password" name="password" id="password" minlength="8" maxlength="20" placeholder="Mínimo 8 Palavras" required>
-                </p>
-                <p>
-                    <label for="media">Média Máxima</label>
-                    <input type="number" name="media" id="media" min="0" max="5" step="0.5" placeholder="Média de um Período">
-                </p>
-                <p>
-                    <label for="month">Mês</label>
-                    <input type="month" name="month" id="month" value="2022-06">
-                </p>
-                <p>
-                    <label for="birthday">Data de Nascimento</label>
-                    <input type="date" name="birthday" id="birthday">
-                </p>
-                <p>
-                    <label for="time">Hora Atual</label>
-                    <input type="time" name="time" id="time">
-                </p>
-                <p>
-                    <label for="phone">Telemovel</label>
-                    <input type="tel" name="phone" id="phone" pattern="^[0-9]{9}$" placeholder="(xxx)xxx-xxx-xxx">
-                </p>
-                <p><input type="checkbox" name="foot" id="foot"> Fut</p>
-                <p><input type="checkbox" name="basket" id="basket"> Basket</p>
-                <p><input type="checkbox" name="volley" id="volley"> Volei</p>
-                <p><input type="checkbox" name="hand" id="hand"> And</p>
-
-                <p>
-                    <input type="radio" name="" id=""> Vermelho
-                </p>
+        <form action="inscricao.php" method="post" autocomplete="off">
+            <fieldset id="dados-pessoais">
+                <legend>Dados Pessoais</legend>
+                <p><label for="nome">Nome</label></p>
+                <p><input type="text" name="nome" id="nome" placeholder="Nome Completo"></p>
+                <p><label for="idade">Idade</label></p>
+                <p><input type="number" name="idade" id="idade" min="1"></p>
+                <p><label for="nascimento">Data de Nascimento</label></p>
+                <p><input type="date" name="nascimento" id="nascimento"></p>
+                <p><label for="hrnascimento">Hora de Nascimento</label></p>
+                <p><input type="time" name="hrnascimento" id="hrnascimento"></p>
+                <p><label for="sexo">Sexo</label></p>
+                <p><input type="radio" name="sexo" id="xmas"> M</p>
+                <p><input type="radio" name="sexo" id="xfem"> M</p>
             </fieldset>
-            <input type="submit" value="Registar" id="submit">
-            <a href="#"><input type="reset" value="Limpar Dados" id="reset"></a>
+
+            <fieldset id="dados-registo">
+                <legend>Dados de Registo</legend>
+                <p><label for="email">E-mail</label></p>
+                <p><input type="email" name="email" id="email" placeholder="Correio Eletrónico"></p>
+                <p><label for="password">Palavra Passe SS</label></p>
+                <p><input type="password" name="password" id="password" placeholder="Segurança Social"></p>
+            </fieldset>
+
+            <fieldset id="dados-opcao">
+                <legend>Dados Facultativos</legend>
+                <p><label for="">Desportos Favoritos</label></p>
+                <p><input type="checkbox" name="fut" id="fut"> Futebol</p>
+                <p><input type="checkbox" name="basket" id="basket"> Basquetebol</p>
+                <p><input type="checkbox" name="and" id="and"> Andebol</p>
+                <p><input type="checkbox" name="vol" id="vol"> Voleibol</p>
+                <p><input type="checkbox" name="ten" id="ten"> Tenis</p>
+                <p><input type="checkbox" name="nat" id="nat"> Natação</p>
+                <p><input type="checkbox" name="outro" id="outro"> Outro</p>
+                <p><label for="cor">Cor Favorita</label></p>
+                <p><input type="color" name="cor" id="cor"></p>
+                <p><label for="foto">Foto para registo</label></p>
+                <p><input type="file" name="foto" id="foto"></p>
+            </fieldset>
+            <p><input type="submit" value="Enviar"> <input type="reset" value="Apagar"></p>
         </form>
     </section>
 </body>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="off">
+    <p>
+        <label for="cidades">Selecione sua cidade</label>
+        <select name="cidades" id="cidades">
+            <option value="" selected>---Selecione---</option>
+            <option value="AV">Aveiro</option>
+            <option value="BE">Beja</option>
+            <option value="BR">Braga</option>
+            <option value="BRA">Bragança</option>
+            <option value="CB">Castelo Branco</option>
+            <option value="CO">Coimbra</option>
+            <option value="EV">Évora</option>
+            <option value="FA">Faro</option>
+            <option value="LE">Leiria</option>
+            <option value="LB">Lisboa</option>
+            <option value="PA">Portalegre</option>
+            <option value="PT">Porto</option>
+            <option value="ST">Santarém</option>
+            <option value="SE">Setúbal</option>
+            <option value="VC">Viana do Castelo</option>
+            <option value="VR">Vila Real</option>
+            <option value="VI">Viseu</option>
+        </select>
+    </p>
+
+    <p>
+        <label for="prof">Profissão</label>
+        <input type="text" name="prof" id="prof" list="proflist">
+
+        <datalist id="proflist">
+            <option value="ADM">Administrador</option>
+            <option value="COZ">Cozinheiro</option>
+            <option value="BAN">Banqueiro</option>
+        </datalist>
+    </p>
+
+    <p>
+        <label for="msg">Mensagem</label>
+        <textarea name="msg" id="msg" cols="30" rows="10" style="resize: none;"></textarea>
+    </p>
+    </form>
+</body>
+</html>

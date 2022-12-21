@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/*
+----------------------------
+Telas Pequenas: - 600px
+Telemóveis:  600px - 768px
+Tablet: 768px - 992px
+Desktop: 992px - 1200px
+Telas Grandes: 1200px -
+----------------------------
+*/
+
+@media screen and (min-width: 992px) {
+    #burguer{
+        display: none;
+    }
+
+    nav{
+        display: block;
+    }
+
+    nav > ul > li{
+        display: inline-block;
+    }
+
+    nav > ul > li > a{
+        border: none;
+        border-radius: 10px;
+    }
+
+    nav > ul > li > a:hover{
+        transform: translate(0px, -1px);
+    }
+
+    main{
+        width: 768px;
+    }
+}
